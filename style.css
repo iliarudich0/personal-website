@@ -51,31 +51,24 @@ button:hover {
     background-color: #555;
 }
 
-#calendar-container {
+#books-container {
     display: flex;
-    gap: 10px;
-}
-
-button {
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .book-entry {
     background: #fff;
     padding: 15px;
-    margin: 10px 0;
+    margin: 10px;
     border: 1px solid #ddd;
+    width: calc(33% - 20px);
+    box-sizing: border-box;
 }
 
 .book-entry img {
     margin-right: 10px;
     border-radius: 5px;
+    max-width: 100px;
+    max-height: 150px;
 }
